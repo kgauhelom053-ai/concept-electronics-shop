@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Shop Name | Phones, TVs & Home Appliances (Concept)</title>
+<meta name="description" content="Concept landing page for an electronics and appliances shop. Placeholder brand, not a real business site.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  EASY REBRAND: search & replace these placeholders
+  - "Your Shop Name"        -> real shop name
+  - "#whatsapp"             -> https://wa.me/<country code + number, no +>
+  - "#call"                 -> tel:+<number>
+  - --brand / --accent CSS colours below
+-->
+<style>
+:root{--brand:#0b5fff;--brand-d:#0846c2;--accent:#ff7a00;--ink:#0f172a;--muted:#5b6475;--bg:#f6f8fc;--card:#fff;--line:#e5e9f2;--wa:#25d366;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.banner{background:#fff7e6;color:#8a4b00;font-size:12.5px;text-align:center;padding:7px 14px;border-bottom:1px solid #ffe2b3}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:-.02em}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#5b8cff);display:grid;place-items:center;color:#fff}
+.nav-links{display:none;gap:26px;font-weight:600;font-size:14.5px;color:var(--muted)}
+.nav-links a:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:15.5px;border-radius:12px;padding:14px 20px;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;font-family:inherit}
+.btn:active{transform:scale(.98)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 20px -8px rgba(37,211,102,.7)}
+.btn-wa:hover{background:#1fb859}
+.btn-call{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn-call:hover{border-color:var(--brand);color:var(--brand)}
+.btn-sm{padding:9px 14px;font-size:14px;border-radius:10px}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-d)}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#dfe8ff 0,transparent 60%),linear-gradient(180deg,#fff,var(--bg));padding:36px 0 44px}
+.hero-grid{display:grid;gap:30px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#e8efff;color:var(--brand-d);font-weight:700;font-size:12.5px;padding:6px 12px;border-radius:999px}
+.hero h1{font-size:clamp(30px,8.4vw,54px);line-height:1.08;letter-spacing:-.035em;margin:14px 0 14px;font-weight:800}
+.hero h1 span{color:var(--brand)}
+.hero p.lead{color:var(--muted);font-size:17px;max-width:540px}
+.cta-row{display:flex;flex-direction:column;gap:10px;margin-top:22px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:13.5px;color:var(--muted);font-weight:600}
+.trust span{display:flex;align-items:center;gap:6px}
+.trust svg{color:var(--brand)}
+.hero-art{position:relative;background:linear-gradient(145deg,#0b1b44,#0b5fff);border-radius:24px;padding:22px;min-height:260px;overflow:hidden;color:#fff}
+.hero-art .tag{position:absolute;right:16px;top:16px;background:var(--accent);color:#fff;font-weight:800;font-size:13px;padding:7px 12px;border-radius:10px;transform:rotate(3deg)}
+.devices{display:flex;align-items:flex-end;justify-content:center;gap:14px;height:100%;padding-top:30px}
+section{padding:52px 0}
+.sec-head{display:flex;flex-direction:column;gap:6px;margin-bottom:24px}
+.eyebrow{font-size:12.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)}
+h2{font-size:clamp(25px,6.4vw,36px);letter-spacing:-.03em;line-height:1.15;font-weight:800}
+.sub{color:var(--muted)}
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 16px;display:flex;flex-direction:column;gap:12px;transition:transform .15s,box-shadow .15s,border-color .15s}
+.cats .cat:last-child{grid-column:span 2}
+.cat:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(15,23,42,.35);border-color:#c9d6f5}
+.cat .ic{width:46px;height:46px;border-radius:12px;background:#eef3ff;color:var(--brand);display:grid;place-items:center}
+.cat b{font-size:15.5px}
+.cat small{color:var(--muted);font-size:13px;margin-top:-8px}
+.deals{display:grid;gap:14px}
+.deal{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.deal-img{height:150px;background:linear-gradient(135deg,#eef3ff,#f8faff);display:grid;place-items:center;position:relative;color:#9fb3e0}
+.badge{position:absolute;top:12px;left:12px;background:var(--accent);color:#fff;font-size:12px;font-weight:800;padding:5px 9px;border-radius:8px}
+.deal-body{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.deal-body h3{font-size:16px;font-weight:700}
+.deal-body .spec{color:var(--muted);font-size:13.5px}
+.price{display:flex;align-items:baseline;gap:10px;margin:6px 0 10px}
+.price .now{font-size:22px;font-weight:800;color:var(--ink)}
+.price .was{color:#98a1b2;text-decoration:line-through;font-size:14px}
+.deal .btn{margin-top:auto}
+.note{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center}
+.why{background:#0b1b44;color:#fff}
+.why .eyebrow{color:#8fb0ff}
+.why .sub{color:#b9c6e6}
+.why-grid{display:grid;gap:12px}
+.why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;display:flex;gap:14px}
+.why-card .ic{flex:none;width:44px;height:44px;border-radius:12px;background:rgba(91,140,255,.18);color:#8fb0ff;display:grid;place-items:center}
+.why-card h3{font-size:16px;margin-bottom:3px}
+.why-card p{color:#b9c6e6;font-size:14px}
+.visit-grid{display:grid;gap:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:700}
+.hours tr:last-child td{border-bottom:0}
+.open-now{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:#0a8a3a;background:#e7f8ee;padding:5px 10px;border-radius:999px;margin-bottom:10px}
+.open-now i{width:8px;height:8px;border-radius:50%;background:#16a34a}
+.map{height:200px;border-radius:12px;background:repeating-linear-gradient(0deg,#eef2f9 0 1px,transparent 1px 28px),repeating-linear-gradient(90deg,#eef2f9 0 1px,transparent 1px 28px),#f8faff;display:grid;place-items:center;color:var(--muted);font-size:14px;text-align:center;margin:12px 0;border:1px solid var(--line)}
+.map .pin{color:var(--accent);margin:0 auto 6px}
+form{display:grid;gap:12px}
+label{font-size:13.5px;font-weight:700;display:grid;gap:6px}
+input,select,textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 4px #e3ebff}
+textarea{min-height:110px;resize:vertical}
+.form-msg{display:none;background:#e7f8ee;color:#0a6b2f;border-radius:12px;padding:12px 14px;font-size:14px;font-weight:600}
+footer{background:#0a1430;color:#b9c6e6;padding:34px 0 96px;font-size:14px}
+footer .row{display:flex;flex-direction:column;gap:10px}
+footer strong{color:#fff}
+.concept{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:#93a3c8}
+.concept a{color:#fff;text-decoration:underline;word-break:break-all}
+.fab{position:fixed;left:14px;right:14px;bottom:14px;z-index:30;display:flex;gap:10px}
+.fab .btn{flex:1;padding:13px;box-shadow:0 10px 30px -10px rgba(15,23,42,.45)}
+@media (min-width:640px){
+ .cta-row{flex-direction:row}
+ .cats{grid-template-columns:repeat(3,1fr)}
+ .cats .cat:last-child{grid-column:auto}
+ .deals{grid-template-columns:repeat(2,1fr)}
+ .why-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+ .nav-links{display:flex}
+ .hero{padding:64px 0 72px}
+ .hero-grid{grid-template-columns:1.1fr .9fr}
+ .hero-art{min-height:380px}
+ .cats{grid-template-columns:repeat(5,1fr)}
+ .cats .cat:last-child{grid-column:auto}
+ .deals{grid-template-columns:repeat(3,1fr)}
+ .visit-grid{grid-template-columns:1fr 1fr}
+ section{padding:72px 0}
+ .fab{display:none}
+ footer{padding-bottom:34px}
+}
+</style>
+</head>
+<body>
+<div class="banner">Concept demo with placeholder shop name, prices and contact details. Not a real store website.</div>
+<header>
+ <div class="wrap nav">
+  <a href="#" class="logo"><span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Your Shop Name</a>
+  <nav class="nav-links"><a href="#categories">Shop</a><a href="#deals">Deals</a><a href="#why">Why us</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav>
+  <a href="#whatsapp" class="btn btn-wa btn-sm" aria-label="Chat on WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0z"/></svg>WhatsApp</a>
+ </div>
+</header>
+
+<main>
+<section class="hero" style="padding-top:36px">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="pill">⚡ Genuine products · Fast delivery</span>
+   <h1>Phones, TVs &amp; home appliances <span>at honest prices.</span></h1>
+   <p class="lead">Shop the latest smartphones, smart TVs, fridges, washing machines and more. Every item comes with a warranty, and we can deliver to your door.</p>
+   <div class="cta-row">
+    <a href="#whatsapp" class="btn btn-wa"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8z"/></svg>Order on WhatsApp</a>
+    <a href="#call" class="btn btn-call"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Call the shop</a>
+   </div>
+   <div class="trust">
+    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Warranty on every item</span>
+    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Delivery &amp; installation</span>
+    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Pay on delivery*</span>
+   </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+   <span class="tag">THIS WEEK'S DEALS</span>
+   <div class="devices">
+    <svg width="190" height="150" viewBox="0 0 190 150"><rect x="5" y="5" width="180" height="112" rx="8" fill="#0a1430" stroke="#8fb0ff" stroke-width="3"/><rect x="14" y="14" width="162" height="94" rx="4" fill="url(#g1)"/><rect x="80" y="117" width="30" height="16" fill="#8fb0ff"/><rect x="55" y="133" width="80" height="6" rx="3" fill="#8fb0ff"/><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b8cff"/><stop offset="1" stop-color="#ff7a00"/></linearGradient></defs></svg>
+    <svg width="58" height="118" viewBox="0 0 58 118"><rect x="3" y="3" width="52" height="112" rx="10" fill="#0a1430" stroke="#fff" stroke-width="3"/><rect x="9" y="12" width="40" height="88" rx="4" fill="#5b8cff"/><rect x="22" y="6" width="14" height="3" rx="1.5" fill="#fff"/></svg>
+    <svg width="74" height="170" viewBox="0 0 74 170"><rect x="3" y="3" width="68" height="164" rx="8" fill="#eef3ff" stroke="#fff" stroke-width="3"/><line x1="3" y1="62" x2="71" y2="62" stroke="#9fb3e0" stroke-width="3"/><rect x="58" y="20" width="5" height="26" rx="2.5" fill="#9fb3e0"/><rect x="58" y="76" width="5" height="34" rx="2.5" fill="#9fb3e0"/></svg>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="categories">
+ <div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Shop by category</span><h2>Everything for your home &amp; pocket</h2></div>
+  <div class="cats">
+   <a href="#whatsapp" class="cat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span><b>Phones</b><small>Smartphones &amp; accessories</small></a>
+   <a href="#whatsapp" class="cat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><b>TVs</b><small>Smart, LED &amp; 4K</small></a>
+   <a href="#whatsapp" class="cat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M5 9h14M9 5v2M9 12v4"/></svg></span><b>Fridges</b><small>Fridges &amp; freezers</small></a>
+   <a href="#whatsapp" class="cat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M7 6h.01M10 6h.01"/></svg></span><b>Washing machines</b><small>Front &amp; top loaders</small></a>
+   <a href="#whatsapp" class="cat"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h10v9a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V8z"/><path d="M16 10h2a2 2 0 0 1 0 4h-2M9 2v3M13 2v3"/></svg></span><b>Small appliances</b><small>Kettles, blenders, irons</small></a>
+  </div>
+ </div>
+</section>
+
+<section id="deals" style="padding-top:0">
+ <div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Featured deals</span><h2>Hot prices this week</h2><p class="sub">Limited stock. Message us to reserve yours.</p></div>
+  <div class="deals">
+   <article class="deal"><div class="deal-img"><span class="badge">-12%</span><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="deal-body"><h3>55" 4K Smart TV</h3><span class="spec">HDR · Built-in apps · Wall mount option</span><div class="price"><span class="now">000,000</span><span class="was">000,000</span></div><a href="#whatsapp" class="btn btn-primary">Reserve on WhatsApp</a></div></article>
+   <article class="deal"><div class="deal-img"><span class="badge">NEW</span><svg width="70" height="84" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div><div class="deal-body"><h3>Smartphone 128GB</h3><span class="spec">Dual SIM · 5000mAh · Brand-new, sealed</span><div class="price"><span class="now">000,000</span><span class="was">000,000</span></div><a href="#whatsapp" class="btn btn-primary">Reserve on WhatsApp</a></div></article>
+   <article class="deal"><div class="deal-img"><span class="badge">-15%</span><svg width="70" height="84" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M5 9h14M9 5v2M9 12v4"/></svg></div><div class="deal-body"><h3>Double-door fridge</h3><span class="spec">Energy-saving · Inverter compressor</span><div class="price"><span class="now">000,000</span><span class="was">000,000</span></div><a href="#whatsapp" class="btn btn-primary">Reserve on WhatsApp</a></div></article>
+  </div>
+  <p class="note">Products and prices are placeholders. Swap in your real stock, prices and currency.</p>
+ </div>
+</section>
+
+<section id="why" class="why">
+ <div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Why buy from us</span><h2>Shop with confidence</h2><p class="sub">Simple promises, kept every time.</p></div>
+  <div class="why-grid">
+   <div class="why-card"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Warranty on everything</h3><p>Genuine products with a manufacturer or shop warranty. If something goes wrong, we sort it out.</p></div></div>
+   <div class="why-card"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><div><h3>Fast delivery</h3><p>Same-day or next-day delivery in town, with installation for TVs and big appliances.</p></div></div>
+   <div class="why-card"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><div><h3>Trusted &amp; local</h3><p>A real shop you can walk into. See the product, test it, and ask us anything before you pay.</p></div></div>
+   <div class="why-card"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><div><h3>Easy payment</h3><p>Cash, card or bank transfer. Ask about pay-on-delivery and instalment options.*</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="visit">
+ <div class="wrap visit-grid">
+  <div class="box">
+   <span class="eyebrow">Visit the store</span>
+   <h2 style="margin:6px 0 12px">Store hours &amp; location</h2>
+   <span class="open-now"><i></i>Open today</span>
+   <table class="hours">
+    <tr><td>Monday – Friday</td><td>8:00 – 19:00</td></tr>
+    <tr><td>Saturday</td><td>9:00 – 18:00</td></tr>
+    <tr><td>Sunday</td><td>12:00 – 17:00</td></tr>
+   </table>
+   <div class="map"><div><svg class="pin" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Google Maps embed goes here</div></div>
+   <p><strong>Your Shop Name</strong><br>[Street address], [Area], [City]<br>Landmark: [e.g. opposite the main market]</p>
+  </div>
+  <div class="box" id="contact">
+   <span class="eyebrow">Contact us</span>
+   <h2 style="margin:6px 0 6px">Ask about a product</h2>
+   <p class="sub" style="margin-bottom:16px">Tell us what you're looking for and we'll reply with price and availability.</p>
+   <form id="f" novalidate>
+    <label>Your name<input name="name" autocomplete="name" placeholder="e.g. Ada" required></label>
+    <label>Phone / WhatsApp<input name="phone" type="tel" autocomplete="tel" placeholder="Your number" required></label>
+    <label>I'm interested in
+     <select name="cat"><option>Phones</option><option>TVs</option><option>Fridges</option><option>Washing machines</option><option>Small appliances</option><option>Something else</option></select>
+    </label>
+    <label>Message<textarea name="msg" placeholder="Brand, size, budget…"></textarea></label>
+    <button class="btn btn-primary" type="submit">Send enquiry</button>
+    <div class="form-msg" id="fm">Thanks! In the live site this goes straight to the shop's WhatsApp or email. (Concept demo: nothing was sent.)</div>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap row">
+  <strong>Your Shop Name</strong>
+  <span>Phones · TVs · Fridges · Washing machines · Small appliances</span>
+  <span>*Payment and delivery options are examples. Edit to match your shop.</span>
+  <p class="concept">Concept by Kgauhelo Mokoena, not commissioned. Want this for your business? <a href="https://contra.com/s/BqeRNoBB-mobile-landing-page-in-48-hours">https://contra.com/s/BqeRNoBB-mobile-landing-page-in-48-hours</a></p>
+ </div>
+</footer>
+
+<div class="fab">
+ <a href="#call" class="btn btn-call">Call</a>
+ <a href="#whatsapp" class="btn btn-wa">WhatsApp us</a>
+</div>
+
+<script>
+// Placeholder links: until real numbers are added, WhatsApp/Call buttons scroll to the contact form.
+document.querySelectorAll('a[href="#whatsapp"],a[href="#call"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();document.getElementById('contact').scrollIntoView({behavior:'smooth'});});});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('fm').style.display='block';});
+</script>
+</body>
+</html>
